@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pokédex - APIs Públicas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <header>
+            <h1>POKÉDEX</h1>
+            <p>Consulta información de un Pokémon</p>
+
+            <div class="buscador">
+                <input
+                    type="text"
+                    id="pokemon"
+                    placeholder="Ejemplo: pikachu"
+                >
+
+                <button id="buscar">
+                    Buscar Pokémon
+                </button>
+            </div>
+        </header>
+
+
+        <section class="informacion">
+
+            <div class="pokemon">
+                <h2>Información del Pokémon</h2>
+
+                <div id="resultado">
+                    <p>Busca un Pokémon para consultar su información.</p>
+                </div>
+            </div>
+
+
+            <div class="combate">
+                <h2>Información de combate</h2>
+
+                <div id="videojuegos">
+                    <p>Las estadísticas aparecerán aquí.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="seccion-cartas">
+
+            <h2>Cartas Pokémon</h2>
+
+            <div id="cartas"></div>
+
+        </section>
+
+        <section class="seccion-comentarios">
+
+    <h2>Comentarios de entrenadores</h2>
+
+    <p id="pokemon-comentarios">
+        Busca un Pokémon para ver sus comentarios.
+    </p>
+
+    <div id="lista-comentarios"></div>
+
+    <h3>Agregar comentario</h3>
+
+    <form id="form-comentario">
+
+        <input
+            type="text"
+            id="nombre-entrenador"
+            placeholder="Nombre del entrenador"
+            required
+        >
+
+        <textarea
+            id="texto-comentario"
+            placeholder="Escribe tu comentario sobre este Pokémon..."
+            required
+        ></textarea>
+
+        <button type="submit">
+            Publicar comentario
+        </button>
+
+    </form>
+
+</section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
